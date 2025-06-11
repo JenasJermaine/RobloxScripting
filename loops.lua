@@ -41,3 +41,25 @@ repeat
     print(i)
     i = i + 1
 until 1 > 10 
+
+--break keyword
+local i = 0
+while true do
+    if i > 10 then
+        break
+    end
+    print(i)
+    i += 1
+    task.wait(1)
+end
+
+--continue keyword
+local myArray = {1,2,3,4,5}
+for i,v in ipairs(myArray) do
+    if v%2 ~= 0 then
+        continue        
+    end
+    print(v)
+end
+
+
